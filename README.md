@@ -1,6 +1,6 @@
 PVAsyncImageView
 ================
-A simple NSImageView subclass that let's you download images from the web asynchronously with some other useful properties.
+A simple NSImageView subclass that let's you download images from the web asynchronously on the Mac with some other useful properties.
 NOTE: this is still a work in progress, so there might be bugs with the tooltips, etc..
 
 Features

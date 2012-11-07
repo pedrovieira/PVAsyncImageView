@@ -5,7 +5,7 @@ NOTE: this is still a work in progress, so there might be bugs with the tooltips
 
 Features
 ----------------
-* Download images from the Web to the NSImageViews asynchronously with 1 line of code
+* Download images from the Web to the NSImageViews asynchronously with just 1 line of code
 * Set a 'Placheholder Image' to be displayed on the NSImageView until the image is downloaded
 * Set an 'Error Image' to be displayed when an error occurs while downloading the image
 * Set ToolTips on the NSImageView for each state -> Loading Image / Image Loaded / Error Loading Image

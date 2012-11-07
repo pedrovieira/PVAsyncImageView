@@ -1,6 +1,6 @@
 PVAsyncImageView is licensed under the terms of the BSD license reproduced 
 below. This means that PVAsyncImageView is free software and can be used for 
-both academic and commercial purposes at absolutely no cost.
+both academic and commercial purposes at absolutely no cost.<br>
 Just thank me in your credits/acknowledgments. 
 
 ===============================================================================

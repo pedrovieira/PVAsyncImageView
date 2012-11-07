@@ -19,3 +19,7 @@ Author
 PVAsyncImageView was created by Pedro Vieira.<br>
 [@W1TCH_](https://twitter.com/W1TCH_)  
 <a href="mailto:pedrovieiradev@hotmail.com?Subject=PVAsyncImageView">pedrovieiradev@hotmail.com</a>
+
+License
+----------------
+PVAsyncImageView is licensed under the terms of the BSD. Read the LICENSE file for more information.

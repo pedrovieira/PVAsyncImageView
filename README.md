@@ -9,3 +9,7 @@ Features
 * Set a 'Placheholder Image' to be displayed on the NSImageView until the image is downloaded
 * Set an 'Error Image' to be displayed when an error occurs while downloading the image
 * Set ToolTips on the NSImageView for each state -> Loading Image / Image Loaded / Error Loading Image
+
+To-Do
+----------------
+* Add Demo project

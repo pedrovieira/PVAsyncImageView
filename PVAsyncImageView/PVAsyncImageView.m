@@ -18,14 +18,18 @@
 @implementation PVAsyncImageView
 
 - (void)downloadImageFromURL:(NSString *)url{
-    [self downloadImageFromURL:url withPlaceholderImage:nil andErrorImage:nil];
+    [self downloadImageFromURL:url withPlaceholderImage:nil errorImage:nil andDisplaySpinningWheel:NO];
 }
 
 - (void)downloadImageFromURL:(NSString *)url withPlaceholderImage:(NSImage *)img{
-    [self downloadImageFromURL:url withPlaceholderImage:img andErrorImage:nil];
+    [self downloadImageFromURL:url withPlaceholderImage:img errorImage:nil andDisplaySpinningWheel:NO];
 }
 
 - (void)downloadImageFromURL:(NSString *)url withPlaceholderImage:(NSImage *)img andErrorImage:(NSImage *)errorImg{
+    [self downloadImageFromURL:url withPlaceholderImage:img errorImage:errorImg andDisplaySpinningWheel:NO];
+}
+
+- (void)downloadImageFromURL:(NSString *)url withPlaceholderImage:(NSImage *)img errorImage:(NSImage *)errorImg andDisplaySpinningWheel:(BOOL)usesSpinningWheel{
     [self cancelDownload];
     
     self.isLoadingImage = YES;
@@ -37,13 +41,41 @@
     imageDownloadData = [NSMutableData data];
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]] delegate:self];
     imageURLConnection = conn;
+    
+    if(usesSpinningWheel){
+        
+        //If the NSImageView size is 64+ height and 64+ width display Spinning Wheel 32x32
+        if (self.frame.size.height >= 64 && self.frame.size.width >= 64){
+            spinningWheel = [[NSProgressIndicator alloc] init];
+            [spinningWheel setStyle:NSProgressIndicatorSpinningStyle];
+            [self addSubview:spinningWheel];
+            [spinningWheel setDisplayedWhenStopped:NO];
+            [spinningWheel setFrame: NSMakeRect(self.frame.size.width * 0.5 - 16, self.frame.size.height * 0.5 - 16, 32, 32)];
+            [spinningWheel setControlSize:NSRegularControlSize];
+            [spinningWheel startAnimation:self];
+            
+        //If not, and size between 63 and 16 height and 63 and 16 width display Spinning Wheel 16x16
+        }else if((self.frame.size.height < 64 && self.frame.size.height >= 16) && (self.frame.size.width < 64 && self.frame.size.width >= 16)){
+            spinningWheel = [[NSProgressIndicator alloc] init];
+            [spinningWheel setStyle:NSProgressIndicatorSpinningStyle];
+            [self addSubview:spinningWheel];
+            [spinningWheel setDisplayedWhenStopped:NO];
+            [spinningWheel setFrame: NSMakeRect(self.frame.size.width * 0.5 - 8, self.frame.size.height * 0.5 - 8, 16, 16)];
+            [spinningWheel setControlSize:NSSmallControlSize];
+            [spinningWheel startAnimation:self];
+        }
+    }
 }
 
 - (void)cancelDownload{
     self.userDidCancel = YES;
-    
     self.isLoadingImage = NO;
     self.didFailLoadingImage = NO;
+    
+    [self deleteToolTips];
+    
+    [spinningWheel stopAnimation:self];
+    [spinningWheel removeFromSuperview];
     
     [imageURLConnection cancel];
     imageURLConnection = nil;
@@ -61,6 +93,9 @@
     self.didFailLoadingImage = YES;
     self.userDidCancel = NO;
     
+    [spinningWheel stopAnimation:self];
+    [spinningWheel removeFromSuperview];
+    
     imageDownloadData = nil;
     imageURLConnection = nil;
     
@@ -73,14 +108,20 @@
     self.userDidCancel = NO;
     
     NSData *data = imageDownloadData;
-    
-    imageDownloadData = nil;
-    imageURLConnection = nil;
-    errorImage = nil;
-    
     NSImage *img = [[NSImage alloc] initWithData:data];
-    self.image = img;
-    self.isLoadingImage = NO;
+    
+    if(img){ //if NSData is from an image
+        self.image = img;
+        self.isLoadingImage = NO;
+        
+        [spinningWheel stopAnimation:self];
+        [spinningWheel removeFromSuperview];
+        imageDownloadData = nil;
+        imageURLConnection = nil;
+        errorImage = nil;
+    }else{
+        [self connection:nil didFailWithError:nil];
+    }
 }
 
 -(void)setToolTipWhileLoading:(NSString *)ttip1 whenFinished:(NSString *)ttip2 andWhenFinishedWithError:(NSString *)ttip3{
@@ -90,6 +131,7 @@
 }
 
 - (void)deleteToolTips{
+    self.toolTip = @"";
     self.toolTipWhileLoading = @"";
     self.toolTipWhenFinished = @"";
     self.toolTipWhenFinishedWithError = @"";

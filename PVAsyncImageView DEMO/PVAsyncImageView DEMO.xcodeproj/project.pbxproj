@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C92780DD164AFE0B009A04D7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92780DC164AFE0B009A04D7 /* Cocoa.framework */; };
+		C92780E7164AFE0B009A04D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C92780E5164AFE0B009A04D7 /* InfoPlist.strings */; };
+		C92780E9164AFE0B009A04D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C92780E8164AFE0B009A04D7 /* main.m */; };
+		C92780ED164AFE0B009A04D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C92780EB164AFE0B009A04D7 /* Credits.rtf */; };
+		C92780F0164AFE0B009A04D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C92780EF164AFE0B009A04D7 /* AppDelegate.m */; };
+		C92780F3164AFE0B009A04D7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92780F1164AFE0B009A04D7 /* MainMenu.xib */; };
+		C9278100164AFE3C009A04D7 /* PVAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C92780FF164AFE3C009A04D7 /* PVAsyncImageView.m */; };
+		C927810A164B2C48009A04D7 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = C9278109164B2C48009A04D7 /* error.png */; };
+		C927810C164B2D13009A04D7 /* loading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C927810B164B2D13009A04D7 /* loading.jpg */; };
+		C927810E164B3393009A04D7 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = C927810D164B3393009A04D7 /* LICENSE.md */; };
+		C9278110164B3399009A04D7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C927810F164B3399009A04D7 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C92780D8164AFE0B009A04D7 /* PVAsyncImageView DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PVAsyncImageView DEMO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92780DC164AFE0B009A04D7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C92780DF164AFE0B009A04D7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C92780E0164AFE0B009A04D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C92780E1164AFE0B009A04D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C92780E4164AFE0B009A04D7 /* PVAsyncImageView DEMO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PVAsyncImageView DEMO-Info.plist"; sourceTree = "<group>"; };
+		C92780E6164AFE0B009A04D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C92780E8164AFE0B009A04D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C92780EA164AFE0B009A04D7 /* PVAsyncImageView DEMO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PVAsyncImageView DEMO-Prefix.pch"; sourceTree = "<group>"; };
+		C92780EC164AFE0B009A04D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C92780EE164AFE0B009A04D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C92780EF164AFE0B009A04D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C92780F2164AFE0B009A04D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C92780FE164AFE3C009A04D7 /* PVAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAsyncImageView.h; sourceTree = "<group>"; };
+		C92780FF164AFE3C009A04D7 /* PVAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAsyncImageView.m; sourceTree = "<group>"; };
+		C9278109164B2C48009A04D7 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		C927810B164B2D13009A04D7 /* loading.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loading.jpg; sourceTree = "<group>"; };
+		C927810D164B3393009A04D7 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
+		C927810F164B3399009A04D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C92780D5164AFE0B009A04D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92780DD164AFE0B009A04D7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C92780CD164AFE0A009A04D7 = {
+			isa = PBXGroup;
+			children = (
+				C927810F164B3399009A04D7 /* README.md */,
+				C927810D164B3393009A04D7 /* LICENSE.md */,
+				C92780E2164AFE0B009A04D7 /* PVAsyncImageView DEMO */,
+				C92780DB164AFE0B009A04D7 /* Frameworks */,
+				C92780D9164AFE0B009A04D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C92780D9164AFE0B009A04D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C92780D8164AFE0B009A04D7 /* PVAsyncImageView DEMO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C92780DB164AFE0B009A04D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C92780DC164AFE0B009A04D7 /* Cocoa.framework */,
+				C92780DE164AFE0B009A04D7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C92780DE164AFE0B009A04D7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C92780DF164AFE0B009A04D7 /* AppKit.framework */,
+				C92780E0164AFE0B009A04D7 /* CoreData.framework */,
+				C92780E1164AFE0B009A04D7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C92780E2164AFE0B009A04D7 /* PVAsyncImageView DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				C92780FD164AFE3C009A04D7 /* PVAsyncImageView */,
+				C92780EE164AFE0B009A04D7 /* AppDelegate.h */,
+				C92780EF164AFE0B009A04D7 /* AppDelegate.m */,
+				C92780F1164AFE0B009A04D7 /* MainMenu.xib */,
+				C92780E3164AFE0B009A04D7 /* Supporting Files */,
+			);
+			path = "PVAsyncImageView DEMO";
+			sourceTree = "<group>";
+		};
+		C92780E3164AFE0B009A04D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9278108164B2C13009A04D7 /* Images */,
+				C92780E4164AFE0B009A04D7 /* PVAsyncImageView DEMO-Info.plist */,
+				C92780E5164AFE0B009A04D7 /* InfoPlist.strings */,
+				C92780E8164AFE0B009A04D7 /* main.m */,
+				C92780EA164AFE0B009A04D7 /* PVAsyncImageView DEMO-Prefix.pch */,
+				C92780EB164AFE0B009A04D7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C92780FD164AFE3C009A04D7 /* PVAsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C92780FE164AFE3C009A04D7 /* PVAsyncImageView.h */,
+				C92780FF164AFE3C009A04D7 /* PVAsyncImageView.m */,
+			);
+			name = PVAsyncImageView;
+			path = ../../PVAsyncImageView;
+			sourceTree = "<group>";
+		};
+		C9278108164B2C13009A04D7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C927810B164B2D13009A04D7 /* loading.jpg */,
+				C9278109164B2C48009A04D7 /* error.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C92780D7164AFE0B009A04D7 /* PVAsyncImageView DEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92780F6164AFE0B009A04D7 /* Build configuration list for PBXNativeTarget "PVAsyncImageView DEMO" */;
+			buildPhases = (
+				C92780D4164AFE0B009A04D7 /* Sources */,
+				C92780D5164AFE0B009A04D7 /* Frameworks */,
+				C92780D6164AFE0B009A04D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PVAsyncImageView DEMO";
+			productName = "PVAsyncImageView DEMO";
+			productReference = C92780D8164AFE0B009A04D7 /* PVAsyncImageView DEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C92780CF164AFE0A009A04D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Pedro Vieira";
+			};
+			buildConfigurationList = C92780D2164AFE0A009A04D7 /* Build configuration list for PBXProject "PVAsyncImageView DEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C92780CD164AFE0A009A04D7;
+			productRefGroup = C92780D9164AFE0B009A04D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C92780D7164AFE0B009A04D7 /* PVAsyncImageView DEMO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C92780D6164AFE0B009A04D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92780E7164AFE0B009A04D7 /* InfoPlist.strings in Resources */,
+				C92780ED164AFE0B009A04D7 /* Credits.rtf in Resources */,
+				C92780F3164AFE0B009A04D7 /* MainMenu.xib in Resources */,
+				C927810A164B2C48009A04D7 /* error.png in Resources */,
+				C927810C164B2D13009A04D7 /* loading.jpg in Resources */,
+				C927810E164B3393009A04D7 /* LICENSE.md in Resources */,
+				C9278110164B3399009A04D7 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C92780D4164AFE0B009A04D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92780E9164AFE0B009A04D7 /* main.m in Sources */,
+				C92780F0164AFE0B009A04D7 /* AppDelegate.m in Sources */,
+				C9278100164AFE3C009A04D7 /* PVAsyncImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C92780E5164AFE0B009A04D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C92780E6164AFE0B009A04D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C92780EB164AFE0B009A04D7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C92780EC164AFE0B009A04D7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C92780F1164AFE0B009A04D7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C92780F2164AFE0B009A04D7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C92780F4164AFE0B009A04D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C92780F5164AFE0B009A04D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C92780F7164AFE0B009A04D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PVAsyncImageView DEMO/PVAsyncImageView DEMO-Prefix.pch";
+				INFOPLIST_FILE = "PVAsyncImageView DEMO/PVAsyncImageView DEMO-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C92780F8164AFE0B009A04D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PVAsyncImageView DEMO/PVAsyncImageView DEMO-Prefix.pch";
+				INFOPLIST_FILE = "PVAsyncImageView DEMO/PVAsyncImageView DEMO-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C92780D2164AFE0A009A04D7 /* Build configuration list for PBXProject "PVAsyncImageView DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92780F4164AFE0B009A04D7 /* Debug */,
+				C92780F5164AFE0B009A04D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92780F6164AFE0B009A04D7 /* Build configuration list for PBXNativeTarget "PVAsyncImageView DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92780F7164AFE0B009A04D7 /* Debug */,
+				C92780F8164AFE0B009A04D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C92780CF164AFE0A009A04D7 /* Project object */;
+}

@@ -21,7 +21,9 @@ How-to-use
 [_imageView downloadImageFromURL:@"mywebsite.com/image.png" withPlaceholderImage:[NSImage imageNamed:@"loading_IMG"] errorImage:[NSImage imageNamed:@"error_IMG"] andDisplaySpinningWheel:YES];
 ```
 
-
+Demo Project
+----------
+This includes a Demo project that explains how to use PVAsyncImageView easily, with almost no lines of code.
 
 Author
 ----------------

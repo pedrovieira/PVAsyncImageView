@@ -14,7 +14,7 @@ How-to-use
 ----------
 1.  Add both .h and .h files of PVAsyncImageView to your project.
 2.  Import PVAsyncImageView.h to wherever you want to use it just by `#import "PVAsyncImageView.h"`
-3.  Set the PVAsyncImageView class to your NSImageView in Interface Builder (easier) or by code using `PVAsyncImageView *pvImageView = (PVAsyncImageView *)_yourImageView;`
+3.  Set the PVAsyncImageView class to your NSImageView in Interface Builder
 4.  Download an image (there are many methods to load images, but this is the most completed one) by:
 
 ``` objective-c

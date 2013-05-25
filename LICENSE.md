@@ -5,7 +5,7 @@ Just thank me in your credits/acknowledgments.
 
 ===============================================================================
 
-Copyright (c) 2012 Pedro Vieira ( https://twitter.com/W1TCH_ )
+Copyright (c) 2012 Pedro Vieira ( https://twitter.com/w1tch_ )
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

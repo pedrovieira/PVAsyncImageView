@@ -28,7 +28,7 @@ This includes a Demo project that explains how to use PVAsyncImageView easily, w
 Author
 ----------------
 PVAsyncImageView was created by Pedro Vieira.<br>
-[@W1TCH_](https://twitter.com/W1TCH_)  
+[@w1tch_](https://twitter.com/w1tch_)  
 <a href="mailto:pedrovieiradev@hotmail.com?Subject=PVAsyncImageView">pedrovieiradev@hotmail.com</a>
 
 License

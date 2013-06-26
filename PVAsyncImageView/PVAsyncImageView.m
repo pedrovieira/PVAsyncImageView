@@ -39,6 +39,9 @@
     self.image = img;
     errorImage = errorImg;
     imageDownloadData = [NSMutableData data];
+#if !__has_feature(objc_arc)
+	[ imageDownloadData retain ];
+#endif
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]] delegate:self];
     imageURLConnection = conn;
     

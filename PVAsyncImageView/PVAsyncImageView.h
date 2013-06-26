@@ -23,9 +23,9 @@
 @property (readonly) BOOL userDidCancel;
 @property (readonly) BOOL didFailLoadingImage;
 
-@property (readwrite) NSString *toolTipWhileLoading;
-@property (readwrite) NSString *toolTipWhenFinished;
-@property (readwrite) NSString *toolTipWhenFinishedWithError;
+@property (readwrite, retain) NSString *toolTipWhileLoading;
+@property (readwrite, retain) NSString *toolTipWhenFinished;
+@property (readwrite, retain) NSString *toolTipWhenFinishedWithError;
 
 
 //Loads an image from the web

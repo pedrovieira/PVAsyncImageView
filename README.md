@@ -1,4 +1,4 @@
-PVAsyncImageView
+PVAsyncImageView [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pedrovieira7/pvasyncimageview/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ================
 A simple NSImageView subclass that let's you download images asynchronously from the web on the Mac with some other useful properties.
 

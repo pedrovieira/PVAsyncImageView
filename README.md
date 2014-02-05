@@ -34,3 +34,7 @@ PVAsyncImageView was created by Pedro Vieira.<br>
 License
 ----------------
 PVAsyncImageView is licensed under the terms of the BSD. Read the LICENSE file for more information.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pedrovieira7/pvasyncimageview/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
